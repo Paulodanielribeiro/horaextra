@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Trabalho</title>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Horas de Trabalho</h1>
+    <form id="loan-form" onsubmit="calculateSalary(event)">
+      <div class="form-input">
+        <label for="loan-value">horas semenais </label>
+        <input type="number" id="horas-semenais" required>
+      </div>
+      <div class="form-input">
+        <label for="loan-installments">salerio mim</label>
+        <input type="number" id="salerio-mim"  required>
+      </div>
+    
+
+      <div id="button-area">
+        <button>hora extra</button>
+      </div>
+    </form>
+
+    <span id="result"></span>
+  </div>
+
+  <script src="/main.js"></script>
+  <script src="/spec/horaextraSpec.js"></script>
+  <script src="/spec/quantidadeSpec.js"></script>
+  <script src="/spec/SalarioReceberSpec.js"></script>
+  <script src="/spec/salarioSpec.js"></script>
+  <script src="/spec/TrabalhoSpec.js"></script>
+</body>
+
+</html>
